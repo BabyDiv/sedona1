@@ -5,38 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sedona</title>
   <link rel="stylesheet" href="styles.css">
+
+  <script src="./scripts/blocks/page-header.js" type="module"></script>
+  <script src="./scripts/index.js" type="module"></script>
 </head>
 <body>
-  <header class="header">
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="header__item">
+  <header class="main-header">
+    <nav class="main-header__nav">
+      <ul class="main-header__list">
+        <li class="main-header__item">
           <a href="index.html">Главная</a>
         </li>
-        <li class="header__item">
+        <li class="main-header__item">
           <a href="media.html">Фото и видео</a>
         </li>
-        <li class="header__item">
+        <li class="main-header__item">
           <a href="review.html">Форма отзыва</a>
         </li>
-        <li class="header__item">
+        <li class="main-header__item">
           <a href="academy.html">HTML Academy</a>
         </li>
       </ul>
     </nav>
-    <a href="index.html" class="header__logo">
+    <a href="index.html" class="main-header__logo" aria-label="Логотип">
       <img src="./images/logo.svg" alt="Логотип Sedona" />
     </a>    
-    <div class="burger">
-      <svg class="burger__open" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <button class="main-header__burger" aria-label="Toggle menu">
+      <svg class="main-header__icon-open" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
         <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
         <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
       </svg>
-      <svg class="burger__close" width="23" height="22" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="main-header__icon-close" width="23" height="22" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z" fill="white"/>
       </svg>
-    </div>
+    </button>
   </header>
   <main>
 
@@ -44,6 +47,6 @@
   <footer>
 
   </footer>
-  <script src="./index.js"></script>
+
 </body>
 </html>

@@ -32,7 +32,7 @@ body {
        font-style: normal;
 }
 
-.header {
+.main-header {
   width: 100%;
   position: relative;
   display: flex;
@@ -40,7 +40,7 @@ body {
   justify-content: space-between;
 }
 
-.header__nav {
+.main-header__nav {
   display: none;
   width: 100%;
   position: relative;
@@ -49,19 +49,19 @@ body {
   /* z-index: 40; */
 }
 
-.header__nav.active {
+.main-header__nav--active {
   display: block;
 }
 
 @media (min-width: 768px) {
-  .header__nav {
+  .main-header__nav {
     display: block;
     padding: 20px 0;
     background-color: transparent;
   }
 }
 
-.header__list {
+.main-header__list {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -71,79 +71,92 @@ body {
 }
 
 @media (min-width: 768px) {
-  .header__list {
+  .main-header__list {
     flex-direction: row;
   }
 }
 
-.header__item a {
+.main-header__item a {
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
   color: var(--secondary-color-text);
   text-transform: uppercase;
   text-decoration: none;
 }
-.header__item {
+.main-header__item {
   display: flex;
   width: 100%;
-  padding: 12px 0;
+  height: 50px;
+  /* padding: 12px 0; */
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 }
 
 @media (min-width: 768px) {
 
-  .header__item {
+  .main-header__item {
     padding: 0;
     border: none;
   }
   
-  .header__item a {
+  .main-header__item a {
     font-size: 14px;
     color: var(--primary-color-text);
     line-height: 21px;
   }
 
-  .header__item:nth-child(2) {
+  .main-header__item:nth-child(2) {
     /* text-align: left; */
     margin-right: 60px;
   }
 
-  .header__item:nth-child(3) {
+  .main-header__item:nth-child(3) {
     /* text-align: right; */
     margin-left: 60px;
   }
 }
 
-.header__logo {
+.main-header__logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
 
-.burger {
+.main-header__burger {
   display: block;
   position: absolute;
   right: 14px;
   top: 14px;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 
+.main-header__icon-open {
+  display: block;
+}
+
+.main-header__icon-close {
+  display: none;
+}
+
 @media (min-width: 768px) {
-  .burger {
+  .main-header__burger {
     display: none;
   }
 }
 
-.burger__close {
-  display: none;
-}
-
-.active {
+.main-header__burger--open {
   display: block;
 }
 
-.display-none {
+.main-header__burger--close {
   display: none;
 }
