@@ -177,12 +177,13 @@ body {
 .hero__container {
   width: 100%;
   height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
   position: relative;
   z-index: 1;
   margin-top: 56px;
 
-  background-image: 
-    url('./images/text-intro.svg'),
+  background-image:
     url('./images/triangle-mobile.svg'),
     url('./images/bg-mobile@1x.jpg');
   
@@ -190,41 +191,35 @@ body {
 
   background-repeat: 
     no-repeat,
-    no-repeat,
     no-repeat;
 
-  background-position: 
+  background-position:
     center calc(50% - 70px),
     center bottom,
     center center;
 
-  background-size: 
-    90vw 30vh,
+  background-size:
     contain,
     cover;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero__container {
-    background-image: 
-      url('./images/text-intro.svg'),
+    background-image:
       url('./images/triangle-mobile.svg'),
       url('./images/bg-mobile@2x.jpg');
 
     background-color: var(--brand-color);
 
-    background-repeat: 
-      no-repeat,
+    background-repeat:
       no-repeat,
       no-repeat;
 
-    background-position: 
-      center calc(50% - 70px),
+    background-position:
       center bottom,
       center center;
 
-    background-size: 
-      90vw 30vh,
+    background-size:
       contain,
       cover;
   }
@@ -236,25 +231,21 @@ body {
     height: 100vh;
     margin-top: 0;
 
-    background-image: 
-      url('./images/text-intro.svg'),
+    background-image:
       url('./images/triangle-tablet.svg'),
       url('./images/bg-tablet@1x.jpg');
 
     background-color: var(--brand-color);
 
-    background-repeat: 
-      no-repeat,
+    background-repeat:
       no-repeat,
       no-repeat;
 
-    background-position: 
-      center center,
+    background-position:
       center bottom,
       center center;
 
-    background-size: 
-      460px 352px,
+    background-size:
       contain,
       cover;
   }
@@ -263,25 +254,21 @@ body {
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
   (min-width: 768px) and (min-resolution: 192dpi) {
   .hero__container {
-    background-image: 
-      url('./images/text-intro.svg'),
+    background-image:
       url('./images/triangle-tablet.svg'),
       url('./images/bg-tablet@2x.jpg');
 
     background-color: var(--brand-color);
 
-    background-repeat: 
-      no-repeat,
+    background-repeat:
       no-repeat,
       no-repeat;
 
     background-position:
-      center center,
       center bottom,
       center center;
 
-    background-size: 
-      460px 352px,
+    background-size:
       contain,
       cover;
   }
@@ -293,25 +280,21 @@ body {
     height: 100vh;
     margin-top: 0;
 
-    background-image: 
-      url('./images/text-intro.svg'),
+    background-image:
       url('./images/triangle-desktop.svg'),
       url('./images/bg-desktop@1x.jpg');
 
     background-color: var(--brand-color);
 
-    background-repeat: 
-      no-repeat,
+    background-repeat:
       no-repeat,
       no-repeat;
 
     background-position:
-      center center,
       center bottom,
       center center;
 
-    background-size: 
-      460px 352px,
+    background-size:
       contain,
       cover;
   }
@@ -320,27 +303,37 @@ body {
 @media (min-width: 1064px) and (-webkit-min-device-pixel-ratio: 2),
   (min-width: 1064px) and (min-resolution: 192dpi) {
   .hero__container {
-    background: 
-      url('./images/text-intro.svg'),
+    background:
       url('./images/triangle-desktop.svg'),
       url('./images/bg-desktop@2x.jpg');
     
     background-color: var(--brand-color);
 
-    background-repeat: 
-      no-repeat,
+    background-repeat:
       no-repeat,
       no-repeat;
 
     background-position:
-      center center,
       center bottom,
       center center;
 
-    background-size: 
-      460px 352px,
+    background-size:
       contain,
       cover;
+  }
+}
+
+.hero__image {
+  max-width: 282px;
+  max-height: 214px;
+  margin-top: -150px;
+}
+
+@media (min-width: 768px) {
+  .hero__image {
+    max-width: 462px;
+    max-height: 450px;
+    margin-top: -50px;
   }
 }
 
