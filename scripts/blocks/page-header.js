@@ -13,7 +13,7 @@ export const initPageHeader = () => {
     nav.classList.add('main-header__nav--active');
     iconClose.classList.add('main-header__burger--open');
     iconOpen.classList.add('main-header__burger--close');
-    logo.classList.add('main-header__burger--close');
+    logo.classList.add('main-header__logo--hidden');
     console.log('hello');
   }
 
@@ -21,7 +21,7 @@ export const initPageHeader = () => {
     nav.classList.remove('main-header__nav--active');
     iconClose.classList.remove('main-header__burger--open');
     iconOpen.classList.remove('main-header__burger--close');
-    logo.classList.remove('main-header__burger--close');
+    logo.classList.remove('main-header__logo--hidden');
     console.log('hello');
   }
 
@@ -35,14 +35,4 @@ export const initPageHeader = () => {
 
   burger.addEventListener('click', handleBurgerClick);
 
-  // () => {
-
-  //   // 
-
-  //   nav.classList.toggle('active');
-  //   burgerClose.classList.toggle('active');
-  //   burgerOpen.classList.toggle('display-none');
-  //   logo.classList.toggle('display-none');
-  //   console.log('hello');
-  // }
 }
